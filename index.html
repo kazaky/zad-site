@@ -146,6 +146,7 @@
 						</div>
 					</div>	
 				</div>
+<<<<<<< HEAD
 
 
 
@@ -372,3 +373,60 @@
 						</script>
 					</body>
 					</html>	
+=======
+			</div>	
+		</div>
+			
+			
+			
+			
+			
+		<!-- ===================================================================================================== -->
+			
+		<!-- JAVASCRIPT -->
+		
+		<!-- Animations -->
+		<script src="js/wow.min.js"></script>
+		<script>
+			new WOW().init();
+		</script>
+				<!-- Google ADS -->
+
+		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- appZad.com -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2851123443394311"
+     data-ad-slot="2320935384"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+				<!-- Google ADS -->
+
+		<!-- Scrollwheel Smoothing -->
+		<script>
+			$(function()
+			{	
+				var $window = $(window);
+				var scrollTime = 0.2;
+				var scrollDistance = 270;
+				$window.on("mousewheel DOMMouseScroll", function(event)
+				{
+	
+					event.preventDefault();	
+					var delta = event.originalEvent.wheelDelta/120 || -event.originalEvent.detail/3;
+					var scrollTop = $window.scrollTop();
+					var finalScroll = scrollTop - parseInt(delta*scrollDistance);
+					TweenMax.to($window, scrollTime, 
+					{
+						scrollTo : { y: finalScroll, autoKill:true }, ease: Power1.easeOut, overwrite: 5	 
+						
+					});
+				});
+			});
+		</script>
+	</body>
+</html>	
+>>>>>>> origin/gh-pages
