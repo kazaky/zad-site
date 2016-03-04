@@ -3,6 +3,9 @@
 
 
 * 
+	.img-circle {
+  border-radius: 50%;
+}
 {
 	font-family:RobotoDraft,sans-serif;
 	-webkit-transition:all .3s ease;
@@ -21,7 +24,7 @@
 {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
-   	box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 :host 
@@ -46,19 +49,19 @@ a:link
 	text-decoration: none; 
 	color: #333;
 }
-	
+
 a:visited 
 {
 	text-decoration: none;
 	color: #333;
 }
-	
+
 a:hover 
 {
 	text-decoration: none;
-  	color: #333;
+	color: #333;
 }
-	
+
 a:active 
 {
 	text-decoration: none;
@@ -73,11 +76,35 @@ a:active
 	margin-top: 15%; 
 	position: relative; 
 	padding: 50px;
-    border-top-left-radius: 2px;
-    border-top-right-radius: 2px;
-    border-bottom-right-radius: 2px;
-    border-bottom-left-radius: 2px;
+	border-top-left-radius: 2px;
+	border-top-right-radius: 2px;
+	border-bottom-right-radius: 2px;
+	border-bottom-left-radius: 2px;
 	box-shadow: rgba(0, 0, 0, 0.0980392) 0px 2px 4px, rgba(0, 0, 0, 0.0980392) 0px 0px 3px;
+}
+.content-team	
+{
+	width: 60%; 
+	background-color: #fff; 
+	margin: auto; 
+	margin-top: 15%; 
+	position: relative; 
+	padding: 50px;
+	border-top-left-radius: 2px;
+	border-top-right-radius: 2px;
+	border-bottom-right-radius: 2px;
+	border-bottom-left-radius: 2px;
+	box-shadow: rgba(0, 0, 0, 0.0980392) 0px 2px 4px, rgba(0, 0, 0, 0.0980392) 0px 0px 3px;
+
+	overflow: inherit;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	justify-content: space-between;
+	-webkit-justify-content: space-between;
+	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+
 }
 
 .works-card
@@ -93,18 +120,18 @@ a:active
 	display: inline-block;
 	padding: 7%;
 }
-	
+
 .works-subcard
 {
 	background-color: #fff;
 	box-shadow: rgba(0, 0, 0, 0.0980392) 0px 2px 4px, rgba(0, 0, 0, 0.0980392) 0px 0px 3px;
-   	border-top-left-radius: 2px;
-   	border-top-right-radius: 2px;
-   	border-bottom-right-radius: 2px;
-   	border-bottom-left-radius: 2px;
-   	position: relative;
+	border-top-left-radius: 2px;
+	border-top-right-radius: 2px;
+	border-bottom-right-radius: 2px;
+	border-bottom-left-radius: 2px;
+	position: relative;
 }
-	
+
 .works-subcard:hover
 {
 	cursor: pointer;
@@ -120,31 +147,31 @@ a:active
 	margin: auto;
 	overflow: auto;
 	position: relative;
-    padding: 10px 0 10px 0;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    justify-content: space-between;
-    -webkit-justify-content: space-between;
-    flex-wrap: wrap;
-    -webkit-flex-wrap: wrap;
+	padding: 10px 0 10px 0;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	justify-content: space-between;
+	-webkit-justify-content: space-between;
+	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
 }
 
 .screenshot-item
 {
-    width: 24%;
+	width: 24%;
 }
 
 .screenshot-item a img
 {
-    width: 100%;
+	width: 100%;
 }
 
 .featherlight .featherlight-image
 {
-    height: 100% !important;
-    width: auto !important;
-    margin: 0 auto;
+	height: 100% !important;
+	width: auto !important;
+	margin: 0 auto;
 }
 
 .intertext-padding
@@ -176,7 +203,13 @@ a:active
 {
 	width: 152px;
 	height: 152px;
-    margin-right: 2em;
+	margin-right: 2em;
+}
+.photoicon
+{
+	width: 110px;
+	height: 110px;
+	margin-right: 2em;
 }
 
 
@@ -201,13 +234,18 @@ a:active
 	font-weight: 400;
 	color: #777;
 }
-
+.text-subtitlex
+{
+	font-size: 1.4em;
+	font-weight: 500;
+	color: #555;
+}
 .text-description
 {
 	word-wrap: break-word;
 	font-size: 1em;
 	font-weight: 400;
-    line-height: 1.5em;
+	line-height: 1.5em;
 	color: #111;
 }
 
@@ -220,39 +258,53 @@ a:active
 	align-items: center
 }
 
+.so-item
+{
+	margin: 5px;
+
+}
+.social-item
+{
+	margin-top: 5px;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex; 
+	align-items: center
+}
+
 .mobile-fab
 {
 	display: none;
-    z-index: 1; 
-    background-color: #00e676 !important; 
-    color: #212121 !important; 
-    position: absolute; 
-    top: -28px; 
-    right: 5%
+	z-index: 1; 
+	background-color: #00e676 !important; 
+	color: #212121 !important; 
+	position: absolute; 
+	top: -28px; 
+	right: 5%
 }
 
 .desktop-fab-container
 {
-    height: 50%; 
-    width: 20%; 
-    position: absolute; 
-    top: 0; 
-    right: 0;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex; 
-    aliign-items: flex-end;
-    -webkit-align-items: flex-end;
-    justify-content: center;
-    -webkit-justify-content: center;
+	height: 50%; 
+	width: 20%; 
+	position: absolute; 
+	top: 0; 
+	right: 0;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex; 
+	aliign-items: flex-end;
+	-webkit-align-items: flex-end;
+	justify-content: center;
+	-webkit-justify-content: center;
 }
-       	
+
 .desktop-fab
 {
-    z-index: 1; 
-    background-color: #00e676 !important; 
-    color: #212121 !important; 
-    margin-bottom: -28px;
+	z-index: 1; 
+	background-color: #00e676 !important; 
+	color: #212121 !important; 
+	margin-bottom: -28px;
 }	
 
 .empty-space
@@ -269,8 +321,8 @@ a:active
 
 .top-corners-rounded
 {
-   	border-top-left-radius: 2px;
-   	border-top-right-radius: 2px;
+	border-top-left-radius: 2px;
+	border-top-right-radius: 2px;
 }
 
 .watermark
@@ -303,23 +355,23 @@ a:active
 
 @media (min-width: 800px) and (max-width: 1100px) 
 {
-    .content-card, .content-works
-    {
-        width: 70%
-    }
+	.content-card, .content-works, .content-team
+	{
+		width: 70%
+	}
 
-    .desktop-fab-container
-    {
-        width: 15%
-    }
+	.desktop-fab-container
+	{
+		width: 15%
+	}
 
 }
 
 @media (max-width: 800px) 
 {
-	.content-card 
+	.content-card , .content-team
 	{
-        margin-top: 20%;
+		margin-top: 20%;
 		width:90%;
 		padding:20px;
 	}
@@ -328,18 +380,18 @@ a:active
 	{
 		display: inline;
 	}
-		
+
 	.desktop-fab
 	{
 		display: none;
 	}
-		
+
 	.content-works
 	{		
 		margin-top: 0.5%;
 		width: 90%;
 	}
-		
+
 	.works-card
 	{
 		width: 33.33%
@@ -358,19 +410,26 @@ a:active
 		font-size: 1.2em;
 	}
 
-    .screenshot-item
-    {
-        width: 49% !important;
-        margin-bottom: 10px;
-    }
+	.screenshot-item
+	{
+		width: 49% !important;
+		margin-bottom: 10px;
+	}
 
 	
-	.content-card 
+	.content-card , .content-team
 	{
 		margin-top:45%;
 		width:95%;
 		padding:20px;
 	}
+		.content-team 
+	{
+		margin-top:45%;
+		width:95%;
+		padding:20px;
+	}
+
 	
 	.title-container
 	{
@@ -403,4 +462,34 @@ a:active
 		width: 120px;
 		height: 120px;
 	}
+
+
+
+}
+
+.list{
+    position: relative;
+    width: 100%;
+    display: inline-block;
+}
+.list ul{
+  list-style-type:none;
+}
+
+.list li {
+    width: 50%; /* nice 2 columns */
+    float: left;
+    padding: 0; /* should have zero paddng/margin */
+    margin: 0;
+}
+
+.list li > span {
+ margin: 100% 100% 100% 100%; /* now margins are specified relative to outer <li> width */
+ display: block;
+}
+
+@media (max-width:500px){
+    .list li {
+        float:none;
+   }
 }
